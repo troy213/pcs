@@ -1,0 +1,19 @@
+$color-primary: #f82c17;
+$color-primary-dark: #c62312;
+$color-primary-light: #f95645;
+
+$color-secondary: #d7e5ff;
+$color-accent: #c00d66;
+$color-dark: #292b2c;
+$color-light: #f2f2f2;
+$color-disabled: #a0a0a0;
+
+$color-success: #32af85;
+$color-info: #377dff;
+$color-danger: #f82c17;
+
+$color-gradient: linear-gradient(
+  to bottom right,
+  $color-primary,
+  $color-accent
+);

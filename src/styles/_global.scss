@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+  color: $color-dark;
+
+  &:visited,
+  &:link {
+    color: $color-dark;
+  }
+}
+
+p {
+  line-height: 150%;
+}
