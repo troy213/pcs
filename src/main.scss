@@ -2,3 +2,9 @@
 @import './styles/config';
 @import './styles/global';
 @import './styles/utility';
+
+@import './components/Navbar';
+
+@import './pages/Home';
+@import './pages/NotFound';
+@import './pages/Notifications';

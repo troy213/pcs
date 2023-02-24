@@ -1,0 +1,44 @@
+.navbar {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background: white;
+  padding: 1rem 0;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+
+  &__icon {
+    color: $color-disabled;
+  }
+
+  &__item {
+    width: 64px;
+    list-style: none;
+
+    & a {
+      display: flex;
+      gap: 0.25rem;
+      color: $color-disabled;
+    }
+
+    &.active a,
+    &.active .navbar__icon {
+      font-weight: 700;
+      color: $color-primary;
+    }
+  }
+
+  &__main-icon-wrapper {
+    background: $color-primary;
+    color: $color-light;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: -4rem;
+
+    & .navbar__icon {
+      width: 2rem;
+      height: 2rem;
+      color: white;
+    }
+  }
+}

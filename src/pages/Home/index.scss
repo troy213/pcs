@@ -1,0 +1,114 @@
+.home {
+  padding: 1rem;
+  margin-bottom: 131px;
+
+  &__header-icon {
+    font-size: 2rem !important;
+  }
+
+  &__notifications-container {
+    position: relative;
+  }
+
+  &__notifications-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color-danger;
+    border: 2px solid white;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.profile-widget {
+  &__card {
+    background: $color-gradient;
+    padding: 1rem;
+    color: $color-light;
+    border-radius: 1rem;
+  }
+
+  &__image {
+    height: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.activity-widget {
+  padding: 1rem;
+
+  &__card {
+    padding: 0 1rem;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+
+    // well actually I made this Icon by myself with Adobe Illustrator since I can't find it anywhere on the internet. Turns out, I didn't calculate the padding of the Icon. So, this is a little adjustment to make this Icon at least looks similar to the others.
+    &--custom-size {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.news-widget {
+  &__card {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  &__image {
+    height: 30px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: 0.5rem;
+    white-space: pre-wrap;
+  }
+}
+
+.users-widget {
+  &__card {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  &__user {
+    margin-left: -0.5rem;
+  }
+
+  &__image {
+    height: 50px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+  }
+
+  &__location {
+    font-size: 0.625rem;
+  }
+
+  &__user-more {
+    z-index: -1;
+    margin-left: -0.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    text-align: center;
+    color: $color-light;
+    background: $color-gradient;
+  }
+}
