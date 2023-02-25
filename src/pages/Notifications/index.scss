@@ -6,6 +6,7 @@
 
   &__item {
     padding: 1rem;
+    cursor: pointer;
 
     &.untouched {
       background-color: $color-secondary;
@@ -15,15 +16,18 @@
   &__image {
     position: relative;
     background: $color-gradient;
-    height: fit-content;
+    width: 75px;
+    height: 75px;
+    padding: 2rem;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 
     & img {
-      width: 75px;
-      height: 75x;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
     }
   }
 

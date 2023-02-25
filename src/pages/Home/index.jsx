@@ -4,6 +4,7 @@ import AcitivityWidget from './ActivityWidget'
 import NewsWidget from './NewsWidget'
 import UsersWidget from './UsersWdiget'
 import { NotificationsIcon } from '../../assets/icons'
+import { PROFILE_DATA, USERS_DATA } from '../../data/dummyData'
 
 const Home = () => {
   return (
@@ -15,15 +16,15 @@ const Home = () => {
         <Link to='/notifications'>
           <div className='home__notifications-container'>
             <NotificationsIcon className='home__header-icon' />
-            <div className='home__notifications-dot'></div>
+            <div className='home__notifications-badge'></div>
           </div>
         </Link>
       </div>
 
-      <ProfileWidget />
+      <ProfileWidget data={PROFILE_DATA} />
       <AcitivityWidget />
       <NewsWidget />
-      <UsersWidget />
+      <UsersWidget data={USERS_DATA} />
     </main>
   )
 }

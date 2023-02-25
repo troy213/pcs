@@ -14,6 +14,12 @@
     width: 64px;
     list-style: none;
 
+    & button {
+      border: 0;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
     & a {
       display: flex;
       gap: 0.25rem;
@@ -34,6 +40,10 @@
     height: 80px;
     border-radius: 50%;
     margin-top: -4rem;
+
+    &:active {
+      background-color: $color-primary-light;
+    }
 
     & .navbar__icon {
       width: 2rem;

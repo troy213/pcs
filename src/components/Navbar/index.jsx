@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import useActivity from '../../hooks/useActivity'
 import {
   HomeIcon,
   AttendanceIcon,
@@ -8,6 +9,13 @@ import {
 } from '../../assets/icons'
 
 const Navbar = () => {
+  const { setIsRunning, setCheckOutTime } = useActivity()
+
+  const handleCheckOut = () => {
+    setIsRunning(false)
+    setCheckOutTime(new Date().toISOString())
+  }
+
   return (
     <nav className='navbar'>
       <ul className='flex flex-space-evenly'>
@@ -24,12 +32,15 @@ const Navbar = () => {
           </Link>
         </li>
         <li className='navbar__item'>
-          <Link to='/' className='flex-column flex-align-center text-3'>
+          <button
+            className='flex-column flex-align-center text-3'
+            onClick={handleCheckOut}
+          >
             <div className='navbar__main-icon-wrapper flex-justify-center flex-align-center'>
               <CheckOutIcon className='navbar__icon' />
             </div>
             <p className='mt-2 text-bold text-color-primary'>Check Out</p>
-          </Link>
+          </button>
         </li>
         <li className='navbar__item'>
           <Link to='/' className='flex-column flex-align-center text-3'>
