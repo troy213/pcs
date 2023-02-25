@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className='navbar'>
-      <ul className='flex flex-space-evenly'>
+      <ul className='flex flex-space-evenly flex-align-end'>
         <li className='navbar__item active'>
           <Link to='/' className='flex-column flex-align-center text-3'>
             <HomeIcon className='navbar__icon' />

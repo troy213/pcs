@@ -59,12 +59,13 @@
 
 .news-widget {
   &__carousel {
+    margin: 0 -1rem;
     padding: 1rem;
     cursor: pointer;
   }
 
   &__card {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.15);
