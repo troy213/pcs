@@ -4,7 +4,7 @@ import AcitivityWidget from './ActivityWidget'
 import NewsWidget from './NewsWidget'
 import UsersWidget from './UsersWdiget'
 import { NotificationsIcon } from '../../assets/icons'
-import { PROFILE_DATA, USERS_DATA } from '../../data/dummyData'
+import { NEWS_DATA, PROFILE_DATA, USERS_DATA } from '../../data/dummyData'
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
 
       <ProfileWidget data={PROFILE_DATA} />
       <AcitivityWidget />
-      <NewsWidget />
+      <NewsWidget data={NEWS_DATA} />
       <UsersWidget data={USERS_DATA} />
     </main>
   )

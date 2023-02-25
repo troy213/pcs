@@ -24,6 +24,27 @@ export const PROFILE_DATA = {
   location: 'Kantor Sahid',
 }
 
+export const NEWS_DATA = [
+  {
+    image: userImg3,
+    author: 'Ana Riswati',
+    createdAt: '2023-02-25T08:36:41.739Z',
+    content: `Kalimat 1 - Lorem ipsum dolor sit amet consec\nKalimat 2 - Lorem ipsum dolor sit amet consec\nKalimat 3 - Lorem ipsum dolor sit amet consec\nKalimat 4 - Lorem ipsum dolor sit amet consec`,
+  },
+  {
+    image: userImg11,
+    author: 'John Doe',
+    createdAt: '2023-02-25T08:36:41.739Z',
+    content: `Kalimat 1 - Lorem ipsum dolor sit amet consec\nKalimat 2 - Lorem ipsum dolor sit amet consec\nKalimat 3 - Lorem ipsum dolor sit amet consec\nKalimat 4 - Lorem ipsum dolor sit amet consec`,
+  },
+  {
+    image: userImg12,
+    author: 'Jane Doe',
+    createdAt: '2023-02-25T08:36:41.739Z',
+    content: `Kalimat 1 - Lorem ipsum dolor sit amet consec\nKalimat 2 - Lorem ipsum dolor sit amet consec\nKalimat 3 - Lorem ipsum dolor sit amet consec\nKalimat 4 - Lorem ipsum dolor sit amet consec`,
+  },
+]
+
 export const USERS_DATA = [
   {
     image: userImg4,
@@ -57,6 +78,41 @@ export const USERS_DATA = [
   },
   {
     image: userImg10,
+    name: 'Risya',
+    location: 'BSD',
+  },
+  {
+    image: userImg2,
+    name: 'Risya',
+    location: 'BSD',
+  },
+  {
+    image: userImg10,
+    name: 'Risya',
+    location: 'BSD',
+  },
+  {
+    image: userImg2,
+    name: 'Risya',
+    location: 'BSD',
+  },
+  {
+    image: userImg10,
+    name: 'Risya',
+    location: 'BSD',
+  },
+  {
+    image: userImg2,
+    name: 'Risya',
+    location: 'BSD',
+  },
+  {
+    image: userImg10,
+    name: 'Risya',
+    location: 'BSD',
+  },
+  {
+    image: userImg2,
     name: 'Risya',
     location: 'BSD',
   },

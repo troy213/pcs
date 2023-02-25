@@ -1,3 +1,5 @@
+import useScreenWidth from '../../hooks/useScreenWidth'
+
 const User = (props) => {
   const { data } = props
   const { image, name, location } = data
@@ -14,18 +16,24 @@ const User = (props) => {
 const UsersWidget = (props) => {
   const { data } = props
 
+  const USER_WIDTH_PX = 65
+  const { screenWidth } = useScreenWidth()
+  const maxRenderedUser = Math.floor(screenWidth / USER_WIDTH_PX)
+
   return (
     <div className='users-widget flex-column gap-4'>
       <p className='text-bold'>Online</p>
-      <div className='users-widget__card flex'>
+      <div className='users-widget__card flex-justify-center'>
         <div className='users-widget__user-container flex'>
-          {data.map((user, index) => (
+          {data.slice(0, maxRenderedUser).map((user, index) => (
             <User data={user} key={index} />
           ))}
         </div>
-        <div className='users-widget__user-more flex flex-align-center text-3'>
-          10 more
-        </div>
+        {data.length > maxRenderedUser ? (
+          <div className='users-widget__user-more flex flex-align-center text-3'>
+            {data.length - maxRenderedUser} more
+          </div>
+        ) : null}
       </div>
     </div>
   )
